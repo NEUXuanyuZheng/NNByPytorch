@@ -18,4 +18,4 @@
    Or you can configure everything by Anaconda.
 
 # Intro
-run and read every python file orderly, you will see the power of PyTorch, and building a Neural Network is not that difficult.
+Run and read every python file orderly, you will see the power of PyTorch, and building a Neural Network is not that difficult.
