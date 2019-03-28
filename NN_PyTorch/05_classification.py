@@ -24,7 +24,7 @@ class Net(torch.nn.Module):
 
     # build a neural network
     def forward(self, x):
-        x = torch.relu(self.hidden(x))
+        x = F.relu(self.hidden(x))
         x = self.predict(x)
         return x
 
@@ -54,6 +54,6 @@ for t in range(100):
         accuracy = float((pred_y == target_y).astype(int).sum()) / float(target_y.size)
         plt.text(1.5, -4, 'Accuracy=%.2f' % accuracy, fontdict={'size': 20, 'color':  'red'})
         plt.pause(0.1)
+        plt.show()
 
 plt.ioff()
-plt.show()
